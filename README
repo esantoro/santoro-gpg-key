@@ -1,0 +1,38 @@
+I am Emanuele Santoro, the blogger from http://santoro.tk .
+Well, I've decided to use this little GIT repository to keep track of my
+public key and of how it changes dureing the days of my life.
+
+At the moment I start this repository (03-Dec-2008 , 11:13 p.m.) my
+repository contains:
+	* santoro.gpg
+	* santoro.gpg.sig
+	* santoro.gpg.asc
+	* santoro.gpg.asc.sig
+	* MD5SUM
+
+Them are:
+* santoro.gpg -> my gpg public key, binary version
+* santoro.gpg.sig -> detached signature for the previous file
+* santoro.gpg.asc -> my gpg public key, ascii-armored version
+* santoro.gpg.asc.sig -> detached signature for the previous file
+* MD5SUM -> md5sum of all the files (run md5sum -c MD5UM to verify)
+
+So, feel free to clone the last snapshot of my GnuPG public key doing
+somehing like that:
+
+	$ git clone git://github.com/esantoro/santoro-gpg-key.git
+
+Q: Why am I not using a OpenPGP Keyserver like keyserver.linux.it or
+pgp.mit.edu ?
+A: Answer is pretty short: keyservers are GLOBAL.
+   I use GnuPG only since just 8 months and before uploading a key to a
+   keyserver i want to get in control with GnuPG and public key
+   criptography.
+
+Q: So why are you using GitHUB and Git ?
+A: Because they are more confortable than manualluy exporting my key,
+   signing it and doing md5sum on them. I have scripts for automagically
+   doing that.
+
+Feel free to post any question to: manu@santoro.tk or
+santoro@autistici.org .
